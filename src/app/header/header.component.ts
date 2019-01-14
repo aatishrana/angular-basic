@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  home: string = 'Home';
+  order: string = 'Order';
+  contact: string = 'Contact Us';
+  
   constructor() { }
 
   ngOnInit() {
