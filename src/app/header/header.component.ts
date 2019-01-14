@@ -10,10 +10,14 @@ export class HeaderComponent implements OnInit {
   home: string = 'Home';
   order: string = 'Order';
   contact: string = 'Contact Us';
-  
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onHomeClick(e) {
+    console.log(e);
   }
 
 }
