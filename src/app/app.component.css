@@ -1,0 +1,16 @@
+#header {
+    background-color: #dfdfdf;
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header>button {
+    height: 70px;
+    width: 400px;
+    align-self: center;
+    background-color: cornflowerblue;
+    color: black;
+}
