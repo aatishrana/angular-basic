@@ -1,0 +1,13 @@
+#cuisine-list {
+    background-color: #dfdfdf;
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+table {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+}
