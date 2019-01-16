@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CuisineService } from './services/cuisine-service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,10 @@ import { CuisineService } from './services/cuisine-service';
 })
 export class AppComponent implements OnInit {
   title = 'zomato-app';
-  tab = 'home';
 
-  constructor(private service: CuisineService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.service
-      .openTab
-      .subscribe(value => this.tab = value);
   }
 
 }

@@ -6,5 +6,4 @@ import { Injectable, EventEmitter } from '@angular/core';
 export class CuisineService {
 
     onOrder = new EventEmitter<boolean>();
-    openTab = new EventEmitter<string>();
 }

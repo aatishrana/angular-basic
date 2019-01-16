@@ -17,16 +17,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  onHomeClick(e) {
-    this.service.openTab.emit('home');
-  }
-
   onOrderClick(e) {
     this.service.onOrder.emit(true);
   }
-
-  onContactClick(e) {
-    this.service.openTab.emit('contact');
-  }
-
 }
