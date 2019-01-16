@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Cuisine } from '../model/Cuisine';
+import { CuisineService } from '../services/cuisine-service';
 
 @Component({
   selector: 'app-cuisine-list',
@@ -9,12 +10,15 @@ import { Cuisine } from '../model/Cuisine';
 export class CuisineListComponent implements OnInit {
 
   cuisines: Cuisine[] = [];
-  @Input() details;
+  details;
 
-  constructor() { }
+  constructor(private service: CuisineService) { }
 
   ngOnInit() {
     this.addSampleData();
+    this.service
+      .onOrder
+      .subscribe(value => this.details = value);
   }
 
   addSampleData() {

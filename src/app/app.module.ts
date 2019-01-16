@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CuisineListComponent } from './cuisine-list/cuisine-list.component';
+import { CuisineService } from './services/cuisine-service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { CuisineListComponent } from './cuisine-list/cuisine-list.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CuisineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
