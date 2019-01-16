@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
   order: string = 'Order';
   contact: string = 'Contact Us';
 
+  @Output() onOrder = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit() {
@@ -18,6 +20,10 @@ export class HeaderComponent implements OnInit {
 
   onHomeClick(e) {
     console.log(e);
+  }
+
+  onOrderClick(e) {
+    this.onOrder.emit(true);
   }
 
 }

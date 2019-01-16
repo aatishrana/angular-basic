@@ -1,8 +1,13 @@
 <div id="cuisine-list">
     <table>
+        <tr>
+            <th>Cuisine Id</th>
+            <th>Cuisine Name</th>
+        </tr>
         <tr *ngFor="let cuisine of cuisines">
             <td>{{cuisine.cuisine_info.cuisine_id}}</td>
             <td>{{cuisine.cuisine_info.cuisine_name}}</td>
+            <td *ngIf="details"><button>View Details</button></td>
         </tr>
     </table>
 </div>

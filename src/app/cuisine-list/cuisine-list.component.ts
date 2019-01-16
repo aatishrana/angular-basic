@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Cuisine } from '../model/Cuisine';
 
 @Component({
@@ -9,6 +9,7 @@ import { Cuisine } from '../model/Cuisine';
 export class CuisineListComponent implements OnInit {
 
   cuisines: Cuisine[] = [];
+  @Input() details;
 
   constructor() { }
 

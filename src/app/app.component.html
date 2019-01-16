@@ -1,2 +1,2 @@
-<app-header></app-header>
-<app-cuisine-list></app-cuisine-list>
+<app-header (onOrder)="details=$event"></app-header>
+<app-cuisine-list [details]="details"></app-cuisine-list>
