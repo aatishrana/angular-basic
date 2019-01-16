@@ -1,2 +1,4 @@
 <app-header></app-header>
-<app-cuisine-list></app-cuisine-list>
+
+<app-cuisine-list *ngIf="tab=='home'"></app-cuisine-list>
+<app-contact *ngIf="tab=='contact'"></app-contact>
