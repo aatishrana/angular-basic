@@ -1,0 +1,16 @@
+install git
+install node
+install vs-code
+npm install -g @angular/cli
+
+1) git checkout 61dafdb79173ae8fe21315029c31af545e636cec (for initial commit)
+2) git checkout 66105d4099f7a270139ae06a7a11d6469698b702 (for basic div)
+3) git checkout 03c83663205fa90837e7afe396680d9bee48f21f (for first component)
+4) git checkout 4b559ee105d1c1defa38eabcee37b006c10192fe (for property binding)
+5) git checkout 9d6e4174dd0cb822cb1b3a8cfa936d8cd2e2156c (for event binding)
+6) git checkout de980fb38669215387e3bd586a14d4abdac9751d (for multiple components)
+7) git checkout fad43a35a7ccc87d8d236a224a47de22c82f49c2 (for component interaction)
+8) git checkout f35de421d5e80bbe4bc3ba8a802659aaaafac096 (for component interaction via service)
+9) git checkout 6da7f656278d0b94a134c1977af1d9887c9cab72 (for basic navigation)
+10)git checkout f5c8445c874f9406b96990548e948e84fa533075 (for routing)
+
